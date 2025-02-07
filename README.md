@@ -1,7 +1,7 @@
 # FCCM
 
 ## Baseline Implementation and Treatment Effect Estimators:
-The valuable contributions of the broader community in advancing open-source AI is acknowledge. The folders 'bmdal_reg' and 'causal_bald' serve as baselines and shared estimators, referencing existing literature as follows:
+The valuable contributions of the broader community in advancing open-source AI is acknowledge. The folders 'bmdal_reg' and 'causal_bald' serve as baselines (e.g., LCMD, Causal-BALD) and shared estimators (e.g., DUE-DNN), referencing existing literature as follows:
 
 BMDAL: "[Black-Box Batch Active Learning for Regression](https://arxiv.org/abs/2302.08981)":
 
