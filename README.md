@@ -1,6 +1,6 @@
 # FCCM
 
-## Baseline Implementation and Treatment Effect Estimators:
+## Baseline Implementations and Treatment Effect Estimators:
 The valuable contributions of the broader community in advancing open-source AI is acknowledge. The folders 'bmdal_reg' and 'causal_bald' serve as baselines (e.g., LCMD, Causal-BALD) and shared estimators (e.g., DUE-DNN), referencing existing literature as follows:
 
 BMDAL: "[Black-Box Batch Active Learning for Regression](https://arxiv.org/abs/2302.08981)":
@@ -25,4 +25,16 @@ Causal-BALD: [Causal-BALD: Deep Bayesian Active Learning of Outcomes to Infer Tr
   volume={35},
   year={2021}
 }
+```
+
+## Package Installation:
+
+Testing Environment: 24GB NVIDIA RTX-3090 on Ubuntu 22.04 LTS platform with 12th Gen Intel i7-12700K 12-Core 20-Thread CPU.
+
+```.sh
+$ conda create --name FCCM python=3.9
+$ conda activate FCCM
+$ pip install -r requirements.txt  # install the BMDAL baselines for benchmarking
+$ pip install .  # install the Causal-Bald baselines for benchmarking
+$ pip install --upgrade torch==2.1.1 torchvision==0.16.1 -f https://download.pytorch.org/whl/cu118/torch_stable.html
 ```
