@@ -65,7 +65,7 @@ $ cd TOY
 $ bash lcmd.sh 
 $ bash murho.sh
 $ bash fccm.sh
-$ bash xxx.sh # for the other method
+$ bash xxx.sh # for the other methods
 ```
 
 #### Visualization on the Risk Metric -- PEHE:
@@ -74,7 +74,7 @@ $ cd text_results
 ```
 Run the ```toy_all_plots.ipynb``` which imports all text reuslts from csv file, e.g., from ```text_results/fccm/```, averging 10 seeds, then save the generated figures with error bar in ```TOY_PEHE.pdf```.
 
-#### Tunining the FCCM:
+#### Tunining the Radius for FCCM:
 
 Under folder ```TOY```, run ```fccm_radius_tuning.sh```, the tuning results are saved under ```text_results/coverage_visuals_{}```, then run ```delta_tuning.ipynb``` for the 95% threshold identification for the radius.
 
@@ -88,27 +88,53 @@ Under folder ```TOY```, copy the test results of FCCM from ```text_results/fccm`
 
 #### Using the .sh file to run 10 simulations, examples on LCMD, $\mu\rho$ BALD, and FCCM are given as follows:
 ```.sh
-$ cd TOY
+$ cd IBM
 $ bash lcmd.sh 
 $ bash murho.sh
 $ bash fccm.sh
-$ bash xxx.sh # for the other method
+$ bash xxx.sh # for the other methods
 ```
 
 #### Visualization on the Risk Metric -- PEHE:
 ```.sh
 $ cd text_results
 ```
-Run the ```toy_all_plots.ipynb``` which imports all text reuslts from csv file, e.g., from ```text_results/fccm/```, averging 10 seeds, then save the generated figures with error bar in ```IBM_PEHE.pdf```.
+Run the ```ibm_all_plots.ipynb``` which imports all text reuslts from csv file, e.g., from ```text_results/fccm/```, averging 10 seeds, then save the generated figures with error bar in ```IBM_PEHE.pdf```.
 
-#### Tunining the FCCM:
+#### Tunining the Radius for FCCM:
 
-Under folder ```TOY```, run ```fccm_radius_tuning.sh```, the tuning results are saved under ```text_results/coverage_visuals_{}```, then run ```delta_tuning.ipynb``` for the 95% threshold identification for the radius.
+Under folder ```IBM```, run ```fccm_radius_tuning.sh```, the tuning results are saved under ```text_results/coverage_visuals_{}```, then run ```delta_tuning.ipynb``` for the 95% threshold identification for the radius.
 
 #### Ablation Stduy Without the Counterfactual Covering:
 
-Under folder ```TOY```, copy the test results of FCCM from ```text_results/fccm``` to folder ```ablation_study```, then run ```abaltion_study.sh``` to get the results without the counterfactual covering, and finally compare FCCM and FCCM- by running ```ablation_study.ipynb```.
+Under folder ```IBM```, copy the test results of FCCM from ```text_results/fccm``` to folder ```ablation_study```, then run ```abaltion_study.sh``` to get the results without the counterfactual covering, and finally compare FCCM and FCCM- by running ```ablation_study.ipynb```.
 
+
+##CMNIST:
+The initial execution will download the MNIST dataset from public available source, please enable Internet on your server, otherwise will run into error.
+
+#### Using the .sh file to run 10 simulations, examples on LCMD, $\mu\rho$ BALD, and FCCM are given as follows:
+```.sh
+$ cd CMNIST
+$ bash lcmd.sh 
+$ bash murho.sh
+$ bash fccm.sh
+$ bash xxx.sh # for the other methods
+```
+
+#### Visualization on the Risk Metric -- PEHE:
+```.sh
+$ cd text_results
+```
+Run the ```cmnist_all_plots.ipynb``` which imports all text reuslts from csv file, e.g., from ```text_results/fccm/```, averging 10 seeds, then save the generated figures with error bar in ```CMNIST_PEHE.pdf```.
+
+#### Tunining the Radius for FCCM:
+
+Under folder ```CMNIST```, run ```fccm_radius_tuning.sh```, the tuning results are saved under ```text_results/coverage_visuals_{}```, then run ```delta_tuning.ipynb``` for the 95% threshold identification for the radius.
+
+#### Ablation Stduy Without the Counterfactual Covering:
+
+Under folder ```CMNIST```, copy the test results of FCCM from ```text_results/fccm``` to folder ```ablation_study```, then run ```abaltion_study.sh``` to get the results without the counterfactual covering, and finally compare FCCM and FCCM- by running ```ablation_study.ipynb```.
 
 
 
