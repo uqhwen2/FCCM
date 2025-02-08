@@ -110,7 +110,8 @@ Under folder ```IBM```, run ```fccm_radius_tuning.sh```, the tuning results are 
 Under folder ```IBM```, copy the test results of FCCM from ```text_results/fccm``` to folder ```ablation_study```, then run ```abaltion_study.sh``` to get the results without the counterfactual covering, and finally compare FCCM and FCCM- by running ```ablation_study.ipynb```.
 
 
-##CMNIST:
+## CMNIST:
+
 The initial execution will download the MNIST dataset from public available source, please enable Internet on your server, otherwise will run into error.
 
 #### Using the .sh file to run 10 simulations, examples on LCMD, $\mu\rho$ BALD, and FCCM are given as follows:
