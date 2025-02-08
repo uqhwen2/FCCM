@@ -86,6 +86,28 @@ Under folder ```TOY```, copy the test results of FCCM from ```text_results/fccm`
 
 :exclamation::exclamation::exclamation: Due to uploading file limit, to test the IBM dataset, which is a public available asset from [here](https://github.com/IBM-HRL-MLHLS/IBM-Causal-Inference-Benchmarking-Framework/blob/master/README.md). Please download the file from [the anonymous link](https://drive.google.com/drive/folders/1fKNN-IaizwpEVUuNLtsNGOI0utahN2Hr), and place the ```ibm_train.npz``` and ```ibm_test.npz``` files under the ```IBM/dataset/ibm/```:exclamation::exclamation::exclamation:
 
+#### Using the .sh file to run 10 simulations, examples on LCMD, $\mu\rho$ BALD, and FCCM are given as follows:
+```.sh
+$ cd TOY
+$ bash lcmd.sh 
+$ bash murho.sh
+$ bash fccm.sh
+$ bash xxx.sh # for the other method
+```
+
+#### Visualization on the Risk Metric -- PEHE:
+```.sh
+$ cd text_results
+```
+Run the ```toy_all_plots.ipynb``` which imports all text reuslts from csv file, e.g., from ```text_results/fccm/```, averging 10 seeds, then save the generated figures with error bar in ```IBM_PEHE.pdf```.
+
+#### Tunining the FCCM:
+
+Under folder ```TOY```, run ```fccm_radius_tuning.sh```, the tuning results are saved under ```text_results/coverage_visuals_{}```, then run ```delta_tuning.ipynb``` for the 95% threshold identification for the radius.
+
+#### Ablation Stduy Without the Counterfactual Covering:
+
+Under folder ```TOY```, copy the test results of FCCM from ```text_results/fccm``` to folder ```ablation_study```, then run ```abaltion_study.sh``` to get the results without the counterfactual covering, and finally compare FCCM and FCCM- by running ```ablation_study.ipynb```.
 
 
 
