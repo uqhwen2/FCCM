@@ -588,7 +588,7 @@ if num_trial == 1:
 #    edges = list(zip(cols.cpu().numpy(), rows.cpu().numpy()))  # direction from cols to rows
 #    G.add_edges_from(edges)
     '''Turn counterfactual covering radii to 0 for ablation study'''
-    threshold_1, threshold_0, threshold_10, threshold_01 = 0.50, 0.20, 0.0, 0.0  # 0.50, 0.20, 0.40, 0.15 used for results
+    threshold_1, threshold_0, threshold_10, threshold_01 = 0.50, 0.20, 0.40, 0.15  # 0.50, 0.20, 0.40, 0.15 used for results
     normalized_distances = normalized_distances.cpu().numpy()
 #    adj_matrix = (normalized_distances < threshold).astype(np.int8)
     # Convert indices to NumPy arrays if they are not already
